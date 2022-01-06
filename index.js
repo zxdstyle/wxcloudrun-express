@@ -49,6 +49,15 @@ app.get('/api/wx_openid', async (req, res) => {
   }
 })
 
+app.post('/login', async (req, res) => {
+  res.send({
+    "username": "admin",
+    "password": "admin",
+    "nickname": "AmosHuKe",
+    "accesstoken": "c0a93ef40df7eec23db074266b1ac0e8"
+  })
+})
+
 const port = process.env.PORT || 80
 
 async function bootstrap() {
